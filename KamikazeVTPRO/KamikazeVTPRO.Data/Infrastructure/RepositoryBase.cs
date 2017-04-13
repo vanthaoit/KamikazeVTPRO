@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace KamikazeVTPRO.Data.Migrations
+namespace KamikazeVTPRO.Data.Infrastructure
 {
     public abstract class RepositoryBase<TEntity> : IRepository<TEntity> where TEntity : class
     {
@@ -146,7 +146,6 @@ namespace KamikazeVTPRO.Data.Migrations
         {
             return dataContext.Set<TEntity>().Count<TEntity>(predicate) > 0;
         }
-
 
         #endregion Implementation
     }

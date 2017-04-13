@@ -1,4 +1,4 @@
-﻿namespace KamikazeVTPRO.Data.Migrations
+﻿namespace KamikazeVTPRO.Data.Infrastructure
 {
     public class DbFactory : Disposable, IDbFactory
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace KamikazeVTPRO.Data.Migrations
+namespace KamikazeVTPRO.Data.Infrastructure
 {
     public interface IRepository<TEntity> where TEntity : class
     {

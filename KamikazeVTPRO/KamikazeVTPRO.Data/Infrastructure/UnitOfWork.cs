@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KamikazeVTPRO.Data.Migrations
+﻿namespace KamikazeVTPRO.Data.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -19,7 +13,7 @@ namespace KamikazeVTPRO.Data.Migrations
         public KamikazeVTPRODbContext DbContext
         {
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
-        } 
+        }
 
         public void Commit()
         {

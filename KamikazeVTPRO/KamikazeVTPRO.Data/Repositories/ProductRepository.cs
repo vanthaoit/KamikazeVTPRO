@@ -1,4 +1,4 @@
-﻿using KamikazeVTPRO.Data.Migrations;
+﻿using KamikazeVTPRO.Data.Infrastructure;
 using KamikazeVTPRO.Model.Models;
 
 namespace KamikazeVTPRO.Data.Repositories
@@ -9,7 +9,7 @@ namespace KamikazeVTPRO.Data.Repositories
 
     public class ProductRepository : RepositoryBase<Product>, IProductRepository
     {
-        public ProductRepository(IDbFactory DbFactory) : base(DbFactory)
+        public ProductRepository(IDbFactory dbFactory) : base(dbFactory)
         {
         }
     }

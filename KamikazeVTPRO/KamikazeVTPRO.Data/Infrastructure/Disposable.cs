@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KamikazeVTPRO.Data.Migrations
+namespace KamikazeVTPRO.Data.Infrastructure
 {
     public class Disposable : IDisposable
     {
