@@ -7,7 +7,6 @@ namespace KamikazeVTPRO.Model.Models
     public class Footer
     {
         [Key]
-        [MaxLength(50)]
         public int ID { set; get; }
 
         [Required]

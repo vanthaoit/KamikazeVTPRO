@@ -14,6 +14,7 @@ namespace KamikazeVTPRO.Model.Models
         [MaxLength(500)]
         public string Name { set; get; }
 
+        [MaxLength(50)]
         public string StringValue { set; get; }
 
         public int? IntValue { set; get; }

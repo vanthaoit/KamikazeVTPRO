@@ -25,7 +25,7 @@ namespace KamikazeVTPRO.Model.Models
         public string Description { set; get; }
 
         [Required]
-        public string CategoryID { set; get; }
+        public int CategoryID { set; get; }
 
         public string Image { set; get; }
 
