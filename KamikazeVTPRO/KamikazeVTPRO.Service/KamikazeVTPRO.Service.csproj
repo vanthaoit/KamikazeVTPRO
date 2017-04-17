@@ -40,8 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\IService.cs" />
+    <Compile Include="ErrorService.cs" />
+    <Compile Include="Infrastructure\IValidationService.cs" />
+    <Compile Include="Infrastructure\ICollectionService.cs" />
+    <Compile Include="Infrastructure\ValidationService.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KamikazeVTPRO.Common\KamikazeVTPRO.Common.csproj">
+      <Project>{B9F4A487-5E21-4C1E-81F0-781C26DC37C8}</Project>
+      <Name>KamikazeVTPRO.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KamikazeVTPRO.Data\KamikazeVTPRO.Data.csproj">
+      <Project>{40B2B930-1438-4781-8210-0ED970BBD5AF}</Project>
+      <Name>KamikazeVTPRO.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KamikazeVTPRO.Model\KamikazeVTPRO.Model.csproj">
+      <Project>{37D82D29-7024-4C95-A698-ED38E5431386}</Project>
+      <Name>KamikazeVTPRO.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

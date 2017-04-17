@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KamikazeVTPRO.Service", "Ka
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KamikazeVTPRO.Web", "KamikazeVTPRO.Web\KamikazeVTPRO.Web.csproj", "{AB2C23C0-3497-48C3-B799-9DB43A087066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KamikazeVTPRO.UnitTest", "KamikazeVTPRO.UnitTest\KamikazeVTPRO.UnitTest.csproj", "{7E3A43AF-6DE7-42D4-B206-4B07A716727F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KamikazeVTPRO.UnitTest", "KamikazeVTPRO.UnitTest\KamikazeVTPRO.UnitTest.csproj", "{6EB97D10-8B28-4FFB-8235-709AF2806C2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{AB2C23C0-3497-48C3-B799-9DB43A087066}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB2C23C0-3497-48C3-B799-9DB43A087066}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB2C23C0-3497-48C3-B799-9DB43A087066}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E3A43AF-6DE7-42D4-B206-4B07A716727F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E3A43AF-6DE7-42D4-B206-4B07A716727F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E3A43AF-6DE7-42D4-B206-4B07A716727F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E3A43AF-6DE7-42D4-B206-4B07A716727F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB97D10-8B28-4FFB-8235-709AF2806C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB97D10-8B28-4FFB-8235-709AF2806C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB97D10-8B28-4FFB-8235-709AF2806C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB97D10-8B28-4FFB-8235-709AF2806C2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

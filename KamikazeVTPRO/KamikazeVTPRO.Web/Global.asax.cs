@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using KamikazeVTPRO.Web.Mappings;
 
 namespace KamikazeVTPRO.Web
 {
@@ -14,7 +15,8 @@ namespace KamikazeVTPRO.Web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+            GlobalConfiguration.Configure(WebApiConfig.Register); // config router in webapi
+            AutoMapperConfiguration.RegisterMappers();//config Mapper 
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
