@@ -40,11 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ErrorService.cs" />
-    <Compile Include="Infrastructure\IValidationService.cs" />
-    <Compile Include="Infrastructure\ICollectionService.cs" />
-    <Compile Include="Infrastructure\ValidationService.cs" />
-    <Compile Include="ProductService.cs" />
+    <Compile Include="Collections\ErrorService.cs" />
+    <Compile Include="Infrastructure\Core\IValidationService.cs" />
+    <Compile Include="Infrastructure\Core\IGenericService.cs" />
+    <Compile Include="Infrastructure\Core\ValidationService.cs" />
+    <Compile Include="Collections\ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +60,10 @@
       <Project>{37D82D29-7024-4C95-A698-ED38E5431386}</Project>
       <Name>KamikazeVTPRO.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\EventHandlers\" />
+    <Folder Include="Infrastructure\Generic\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

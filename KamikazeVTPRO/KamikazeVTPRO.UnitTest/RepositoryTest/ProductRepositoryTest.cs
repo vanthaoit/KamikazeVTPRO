@@ -1,9 +1,9 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using System.Linq;
 using KamikazeVTPRO.Data.Infrastructure;
 using KamikazeVTPRO.Data.Repositories;
 using KamikazeVTPRO.Model.Models;
-using System;
-using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace KamikazeVTPRO.UnitTest.RepositoryTest
 {
@@ -18,9 +18,10 @@ namespace KamikazeVTPRO.UnitTest.RepositoryTest
         public void Initialize()
         {
             dbFactory = new DbFactory();
-            unitOfWork = new UnitOfWork(dbFactory);
+
             productRepository = new ProductRepository(dbFactory);
 
+            unitOfWork = new UnitOfWork(dbFactory);
         }
 
         [TestMethod]
@@ -36,9 +37,9 @@ namespace KamikazeVTPRO.UnitTest.RepositoryTest
             Product product = new Product();
             product.Name = "Công trình C";
             product.Alias = "Cong-Trinh-C";
-           
+
             product.CategoryID = 1;
-     
+
             product.Status = true;
             product.CreatedDate = DateTime.Now;
             var result = productRepository.Add(product);

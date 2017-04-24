@@ -1,7 +1,7 @@
 ﻿using KamikazeVTPRO.Data.Infrastructure;
 using KamikazeVTPRO.Data.Repositories;
 using KamikazeVTPRO.Model.Models;
-using KamikazeVTPRO.Service;
+using KamikazeVTPRO.Service.Collections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
@@ -24,7 +24,7 @@ namespace KamikazeVTPRO.UnitTest.ServiceTest
             _mockUnitOfWork = new Mock<IUnitOfWork>();
             _mockProductTagService = new Mock<IProductTagRepository>();
             _mockTagService = new Mock<ITagRepository>();
-            _productService = new ProductService(_mockProduct.Object,_mockProductTagService.Object, _mockTagService.Object, _mockUnitOfWork.Object);
+            _productService = new ProductService(_mockProduct.Object, _mockProductTagService.Object, _mockTagService.Object, _mockUnitOfWork.Object);
             _product = new Product()
             {
                 ID = 1,

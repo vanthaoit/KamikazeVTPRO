@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using KamikazeVTPRO.Model.Models;
-using KamikazeVTPRO.Service;
+using KamikazeVTPRO.Service.Collections;
 
 namespace KamikazeVTPRO.Web.Infrastructure.Core
 {

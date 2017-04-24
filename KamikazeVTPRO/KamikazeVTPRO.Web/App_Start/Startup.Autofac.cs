@@ -9,7 +9,7 @@ using KamikazeVTPRO.Data;
 using KamikazeVTPRO.Data.Infrastructure;
 using KamikazeVTPRO.Data.Repositories;
 using KamikazeVTPRO.Model.Models;
-using KamikazeVTPRO.Service;
+using KamikazeVTPRO.Service.Collections;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.DataProtection;

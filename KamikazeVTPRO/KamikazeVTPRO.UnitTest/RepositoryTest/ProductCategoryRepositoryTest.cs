@@ -46,5 +46,13 @@ namespace KamikazeVTPRO.UnitTest.RepositoryTest
             Assert.IsNotNull(result);
             Assert.AreEqual(2, result.ID);
         }
+        [TestMethod]
+        public void ProductCategoryRepositoryGetBreadcrumbIdIEnumerable()
+        {
+            int id = 5;
+            var result = objRepository.GetTeamTree(id);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(4,result.Count());
+        }
     }
 }

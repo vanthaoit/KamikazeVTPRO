@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\IBreadcrumb.cs" />
     <Compile Include="KamikazeVTPRODbContext.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
@@ -93,5 +94,6 @@
       <DependentUpon>201704121040172_InitialDbVTPRO.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
