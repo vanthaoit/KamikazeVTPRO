@@ -23,12 +23,14 @@ namespace KamikazeVTPRO.Data.Repositories
             IEnumerable<ProductCategory> familyTree = query.AsQueryable();
 
             var response = GetBreadcrumbs(familyTree, productCategoryId);
+
             return response;
         }
 
         private IEnumerable<ProductCategory> GetBreadcrumbs(IEnumerable<ProductCategory> entities, int productCategoryId)
         {
             var parents = entities.Where(x => x.ID != productCategoryId);
+
             var current = entities.Where(x => x.ID == productCategoryId);
 
             foreach (var breadcrumb in current)
@@ -36,6 +38,7 @@ namespace KamikazeVTPRO.Data.Repositories
                 if (breadcrumb.ParentID.HasValue)
                 {
                     foreach (var trail in GetBreadcrumbs(parents, breadcrumb.ParentID.Value))
+
                         yield return trail;
                 }
                 yield return breadcrumb;

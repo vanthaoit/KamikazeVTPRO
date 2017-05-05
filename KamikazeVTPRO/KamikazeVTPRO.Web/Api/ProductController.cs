@@ -50,7 +50,7 @@ namespace KamikazeVTPRO.Web.Api
                 else
                 {
                     Product newProduct = new Product();
-                    newProduct.UpdateProduct(productVm);
+                    newProduct.MapProductViewModel(productVm);
                     newProduct.CreatedDate = DateTime.Now;
                     newProduct.CreatedBy = User.Identity.Name;
                     _productService.Add(newProduct);

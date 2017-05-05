@@ -4,6 +4,6 @@ namespace KamikazeVTPRO.Data.Extensions
 {
     public interface IBreadcrumb<TEntity>
     {
-        IEnumerable<TEntity> GetTeamTree(int parentId);
+        IEnumerable<TEntity> GetTeamTree(int Id);
     }
 }

@@ -5,7 +5,7 @@ namespace KamikazeVTPRO.Web.Infrastructure.Extensions
 {
     public static class EntityMapperExtensions
     {
-        public static void UpdateProduct(this Product product, ProductViewModel productVm)
+        public static void MapProductViewModel(this Product product, ProductViewModel productVm)
         {
             product.ID = productVm.ID;
             product.Name = productVm.Name;
